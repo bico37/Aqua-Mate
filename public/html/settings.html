@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Mate</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <script src="../js/settings.js" defer></script>
+
+    <link rel="website icon" type="png" href="../img/icon/web-icon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-grid">
+            <div id="header-side-bar_icon" onclick="sideBar_generate()">
+                <div class="water"></div>
+            </div>
+            <div id="header_headline">
+                <h1>Settings</h1>
+            </div>
+            <div id="header-reload-day" onclick="LoadSettings()">
+                <img src="../img/navIcon/settings.png" alt="reload-icon">
+            </div>
+        </div>
+    </header>
+    
+    <!-- Side Bar -->
+    <section id="sideBar" style="display: none;">
+        <div id="nav-menu">
+            <ul>
+                <li><a href="../index.html"><img src="../img/navIcon/home.png" alt="home">Home</a></li>
+                <li><a href="../html/list.html"><img src="../img/navIcon/list.png" alt="list">List</a></li>
+                <li><a href="../html/settings.html"> <img src="../img/navIcon/settings.png" alt="settings">Settings</a></li>
+                <!-- <li><a href="../html/info.html"> <img src="../img/navIcon/info.png" alt="info">Info</a></li> -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section id="content-main">
+        <div id="content-empAmountCalc" onclick="calcH()">Calculate Hydration</div>
+        <div id="content-ImportInfos" style="display: none;">
+        <h2>Calculate Your Recommended Hydration</h2>
+
+
+        <input type="number" id="gewicht" placeholder="z.B. 70kg" required>
+        
+        <!-- HTML !-->
+        <button class="button-13" onclick="calculate()" role="button">Calculate</button>
+        <div id="content-ausp-reco"></div>
+    </div>
+    <div id="content-inputA_amount">
+        <h3>What is your goal?</h3>
+        <input type="number" id="drinkGoal" placeholder="z.B. 2.5l" required>
+
+        <!-- HTML !-->
+        <button class="button-26" role="button" onclick="safeSettings()">Submit</button>
+
+
+        </div>  
+    </section>
+    
+
+</body>
+
+</html>

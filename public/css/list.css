@@ -1,0 +1,252 @@
+* {
+    outline: 2px solid dotted;
+}
+
+@font-face {
+    font-family: ralewayBold;
+    src: url(../font/Raleway-Bold.ttf);
+}
+
+@font-face {
+    font-family: ralewayRegular;
+    src: url(../font/Raleway-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppinsLight;
+    src: url(../font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: poppinsSemiBold;
+    src: url(../font/Poppins-SemiBold.ttf);
+}
+
+/* COLORS */
+.first-color {
+    background: #081f37;
+}
+
+.second-color {
+    background: #5fc9f3;
+}
+
+.third-color {
+    background: #2e79ba;
+}
+
+.fourth-color {
+    background: #1e549f;
+}
+
+.fith-color {
+    background: #aedef1;
+}
+
+
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+
+}
+
+
+/* Header */
+header {
+    background-color: #5fc9f3;
+}
+
+#header-grid {
+    display: grid;
+    grid-template-columns: 18% 62% 20%;
+    margin-left: 5vw;
+
+    padding-top: 3%;
+}
+
+#header-grid img {
+    width: 80%;
+}
+
+#header_headline h1 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 2rem;
+
+    font-family: ralewayBold;
+    font-weight: bold;
+    text-align: center;
+
+    text-transform: capitalize;
+}
+
+/* Reset Day button */
+#header-reload-day {
+    margin-left: 4vw;
+    cursor: pointer;
+}
+
+
+#header-side-bar_icon img {
+    margin-right: 1vw;
+    width: 12vw;
+    padding: 0;
+}
+
+/* wasser glas */
+.water {
+    margin: auto;
+    position: relative;
+    width: 8vw;
+    height: 6vh;
+    background-color: #80c5de;
+    box-shadow: inset 0 0 50px #1c637c;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+
+    animation: bounce2 2s ease infinite;
+    cursor: pointer;
+}
+
+.water::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    background-color: #ececec;
+    position: absolute;
+    top: -120%;
+    left: -50%;
+    border-radius: 70%;
+    animation: anim 12s linear infinite;
+}
+
+.water::after {
+    content: "";
+    width: 204%;
+    height: 204%;
+    background-color: #ececec80;
+    position: absolute;
+    top: -150%;
+    left: -52%;
+    border-radius: 40%;
+    animation: anim 12s linear infinite;
+    animation-delay: 0.5s;
+}
+
+
+@keyframes anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-6px);
+    }
+
+    60% {
+        transform: translateY(-4px);
+    }
+}
+
+
+
+
+/* Side Bar */
+#sideBar {
+    position: absolute;
+    background-color: #2e79ba;
+    height: 92%;
+    width: 45vw;
+    z-index: 2;
+}
+
+/* NAV */
+#nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1vw;
+
+}
+
+#nav-menu li {
+    margin-left: 0.7vw;
+    width: 100%;
+
+    margin: 1.2vw 0 1.2vw 2vw;
+}
+
+#nav-menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+
+    font-family: poppinsLight;
+    font-size: 1.5rem;
+}
+
+#nav-menu li:active {
+    transform: scale(0.95);
+}
+
+#nav-menu img {
+    width: 6vw;
+    margin-right: 2vw;
+}
+
+
+/* Cont */
+#content-main{
+    
+}
+#content-main h2 {
+    margin: 0vw 0 0 1vw;
+    padding: 0;
+
+    font-family: poppinsSemiBold;
+    font-size: 1.4rem;
+
+}
+#ausg{
+    display: grid;
+    justify-content: center;
+}
+
+#contAusg{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 90vw;
+
+    background-color: #aedef1;
+    border-radius: 3vw;
+    height: 80vh;
+
+    text-align: center;
+
+    overflow-y: scroll;
+}
+
+#contAusg p{
+    font-family: ralewayRegular;
+    font-size: 1rem;
+}
+

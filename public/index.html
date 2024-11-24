@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Mate</title>
+    <link rel="stylesheet" href="./css/start.css">
+    <script src="./js/start.js" defer></script>
+
+    <link rel="website icon" type="png" href="./img/icon/web-icon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div id="header-grid">
+            <div id="header-side-bar_icon" onclick="sideBar_generate()">
+                <div class="water"></div>
+                <!-- <img src="./img/icon/web-icon.png" alt="nav icon"> -->
+            </div>
+            <div id="header_headline">
+                <h1>Aqua Mate</h1>
+            </div>
+            <div id="header-reload-day" onclick="LoadSettings()">
+                <img src="./img/navIcon/settings.png" alt="reload-icon">
+            </div>
+        </div>
+    </header>
+    
+    <!-- Side Bar -->
+    <section id="sideBar" style="display: none;">
+        <div id="nav-menu">
+            <ul>
+                <li><a href="./index.html"><img src="./img/navIcon/home.png" alt="home">Home</a></li>
+                <li><a href="./html/list.html"><img src="./img/navIcon/list.png" alt="list">List</a></li>
+                <li><a href="./html/settings.html"> <img src="./img/navIcon/settings.png" alt="settings">Settings</a></li>
+                <!-- <li><a href="./html/info.html"> <img src="./img/navIcon/info.png" alt="info">Info</a></li> -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section id="content-main">
+        <div id="cont_gesAusg">
+            <p></p>
+        </div>
+        <div id="cont_inp">
+            <div id="cont_headline">
+                <h2>Track your Drinks:</h2>
+            </div>
+
+            <div id="cont_inputs">
+                <div id="inputs-all">
+                    <div id="input_amount">
+                        <input type="number" name="amount" id="input-amount_line" placeholder="amount of Liquid">
+                        <select name="units" size="1" id="input_unitSelect" onchange="saveSelection()">
+                            <option value="ml">ml</option>
+                            <option value="l">l</option>
+                        </select>
+                    </div>
+                    <div id="input_time">
+                        <input type="time" name="time" id="input-time_info">
+                    </div>
+                    <div id="input_type">
+                        <input type="text" name="Liquid Type" id="input-type_info" placeholder="which drink">
+                    </div>
+                    <div id="inputs-error_message"></div>
+                    <div id="confirm-button">
+                        <button class="button-59" onclick="addDrink()">Confirm</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

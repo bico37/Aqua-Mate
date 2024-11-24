@@ -1,0 +1,44 @@
+[
+  {
+    "date": "13.03.2024",
+    "amount": "0.7",
+    "type": "water",
+    "time": "08:11",
+    "imagePath": "uploads\\1710335880387-b7f439c6-9af1-4213-9696-98ed2c24f4cd.jpg"
+  },
+  {
+    "date": "13.03.2024",
+    "amount": "0.33",
+    "type": "Cola",
+    "time": "15:23",
+    "imagePath": "uploads\\1710335918705-02.png"
+  },
+  {
+    "date": "13.03.2024",
+    "amount": "0.5",
+    "type": "Beer",
+    "time": "20:15",
+    "imagePath": "uploads\\1710335945783-hiclipart.com.png"
+  },
+  {
+    "date": "05.05.2024",
+    "amount": "0.5",
+    "type": "Beer",
+    "time": "11:00",
+    "imagePath": "uploads"
+  },
+  {
+    "date": "23.11.2024",
+    "amount": "0.4",
+    "type": "Coke",
+    "time": "04:20",
+    "imagePath": "uploads"
+  },
+  {
+    "date": "23.11.2024",
+    "amount": "0.2",
+    "type": "Water",
+    "time": "22:07",
+    "imagePath": "uploads"
+  }
+]
