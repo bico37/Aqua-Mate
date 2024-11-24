@@ -61,7 +61,10 @@ tsc
 Start the application:
 
 ```bash
-npm start
+cd dist
+```
+```bash
+node aquaMate-server.js
 ```
 
 The app should now be running locally. Open your browser and go to [http://localhost:3000](http://localhost:3000) to view it.
